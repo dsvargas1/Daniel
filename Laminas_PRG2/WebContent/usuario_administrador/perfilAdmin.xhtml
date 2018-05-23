@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+	<title>Gestión de Usuarios</title>
+</h:head>
+
+<h:body>
+	<h:form>
+		<h3>Perfil Administrador</h3>
+		<table>
+			<h:outputText value='ID:'></h:outputText>
+			<h:outputText value='#{userBean.usuario.id}'></h:outputText>
+			<h:outputText value='Usuario:'></h:outputText>
+			<h:outputText value='#{userBean.usuario.userName}'></h:outputText>
+			<h:outputText value ='Contraseña:'></h:outputText>
+			<h:outputText value='#{userBean.usuario.password}'></h:outputText>
+			<h:outputText value = 'Nombre:'></h:outputText>
+			<h:outputText value='#{userBean.usuario.fullName}'></h:outputText>
+			<h:outputText value='Correo:'></h:outputText>
+			<h:outputText value='#{userBean.usuario.emailAddress}'></h:outputText>
+			<h:outputText value='Tipo de usuario:'></h:outputText>
+			<h:outputText value='#{userBean.usuario.userType}'></h:outputText>
+		</table>
+	</h:form>
+</h:body>
+</html>
